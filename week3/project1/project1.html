@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+    <style type="text/css">
+      main {
+        width: 100%;
+        height: 400px;
+        margin-top: 80px;
+        position: relative;
+        display: block;
+      }
+      #rightsection {
+        height: 400px;
+        width: 30%;
+        border: 0px;
+        position: relative;
+        float: left;
+        text-align: center;
+      }
+      #rs-img {
+        width: 80px;
+        padding: 100px 0px 10px 0px;
+      }
+      #righthead {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        letter-spacing: 3px;
+        padding: 20px 0px;
+        font-weight: 100;
+        color: #cbaf65;
+      }
+      #righttxt {
+        color: #f5f5f5;
+        word-spacing: 4px;
+        letter-spacing: 1px;
+        line-height: 30px;
+      }
+      #rightsubmit {
+        height: 40px;
+        width: 150px;
+        font-size: 15px;
+        border-radius: 20px;
+        border: 0px;
+        margin-top: 30px;
+      }
+      #leftsection {
+        height: 450px;
+        width: 60%;
+        border: 0px;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin-left: 30px;
+        padding: 50px 10px 20px 10px;
+        background-color: #f5f5f5;
+        border-bottom-left-radius: 200px;
+        border-top-left-radius: 200px;
+      }
+
+      #selectinput {
+        height: 25px;
+        width: 210px;
+        float: left;
+        position: relative;
+        margin: 7px 15px 7px 90px;
+      }
+      #rgsubmit {
+        background-color: #054c9b;
+        height: 40px;
+        width: 100px;
+        font-size: 15px;
+        color: white;
+        border-radius: 20px;
+        border: 0px;
+        margin-top: 50px;
+      }
+      form {
+        height: 50%;
+        align-content: center;
+        line-height: 45px;
+      }
+      .inputid {
+        height: 35px;
+        width: 200px;
+        margin: 7px 15px 7px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="mainbody">
+      <section id="rightsection">
+        <img id="rs-img" src="images/rocket.png" />
+        <h2 id="righthead">Welcome</h2>
+        <p id="righttxt">
+          You are few minutes away to <br />explore the flexibility of our
+          services. <br />...we are readily available to help...
+        </p>
+        <p>
+          <a href="login.html" alt="homepage" target="_blank">
+            <input id="rightsubmit" type="submit" value="Login"
+          /></a>
+        </p>
+      </section>
+      <section id="leftsection">
+        <form action="success-page.html" method="post">
+          <h4>Register your Account</h4>
+          <p>
+            <input
+              class="inputid"
+              type="text"
+              placeholder="First Name"
+              required
+            />
+            <input class="inputid" type="email" placeholder="Email" required />
+          </p>
+          <p>
+            <input
+              class="inputid"
+              type="text"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              class="inputid"
+              type="text"
+              placeholder="Phone Number"
+              required
+            />
+          </p>
+          <p>
+            <input
+              class="inputid"
+              type="Password"
+              placeholder="Password"
+              required
+            />
+            <input class="inputid" type="date" placeholder="dob" required />
+          </p>
+          <p>
+            <input
+              class="inputid"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <input
+              class="inputid"
+              type="color"
+              placeholder="choose color"
+              required
+            />
+          </p>
+          <p id="selectinput">
+            <select class="inputid" id="selectinput">
+              <option selected>---Select Gender---</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Both</option>
+              <option>Prefer Not to Say</option>
+            </select>
+          </p>
+          <p>
+            <input id="rgsubmit" type="submit" value="Register" />
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

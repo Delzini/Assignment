@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style type="text/css">
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url(images/bgimg3.jpg);
+            width: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #navlogo{
+            height: 50px;
+            bottom: 15px;
+            position: relative;
+            float: left;
+            padding-left: 100px;
+                  
+        }
+        #navlogokey{
+            position: relative;
+            float: left;
+            margin-right: 400px;
+            padding: 0px;
+            font-weight:bolder;
+            font-size: 24px;
+            font-family: 'Brush Script MT', cursive;
+            bottom: 28px;
+        }
+       
+        main{
+            text-align: left;
+            font-weight: 300;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+           }
+       
+        #section{
+            background-image: url(images/bgimg3.jpg);
+            margin: 100px 0px 100px 300px;
+            height: 400px;
+            width: 20%;
+            border: 0px;
+            border: 0px;
+            position: relative;
+            float: left;
+            text-align: center;
+        }
+        #secimg{
+            margin-top: 150px;
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            
+        }
+        #sectxt{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 2px;
+            margin: 0px;
+        }
+        #sectionA{
+            background-color: whitesmoke;
+            margin: 100px 0px 100px 0px;
+            height: 400px;
+            width: 45%;
+            border: 0px;
+            border: 0px;
+            position: relative;
+            float: left;
+        }
+        #rightsecA{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            height: 20px;
+            width: 80px;
+            top: 20px;
+            padding: 7px 0px 0px 10px;
+            float: right;
+            position: relative;
+            border: 1px red solid;
+            font-size: 12px;
+            border-radius: 6px;
+        }
+        #rightsec{
+            background-color: #ACD2E2;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            height: 20px;
+            width: 80px;
+            top: 20px;
+            padding: 7px 0px 0px 10px;
+            margin-right: 10px;
+            float: right;
+            position: relative;
+            border: 1px red solid;
+            font-size: 12px;
+            border-radius: 6px;
+            
+        }
+          
+        #imgform{
+            margin: 100px 0px 0px 90px;
+            border: 1px red solid;
+            height: 35px;
+            width: 35px;
+        }
+        #txtform{
+            
+            position: relative;
+            display: inline-block;
+            bottom: 15px;
+            border: 1px red solid;
+            height: 30px;
+            width: 200px;
+        }
+        #imgform1{
+            margin: 0px 0px 5px 90px;
+            border: 1px red solid;
+            height: 35px;
+            width: 35px;
+        }  
+        #txtform1{
+            margin-left: 0px;
+            position: relative;
+            display: inline-block;
+            bottom: 18px;
+            border: 1px red solid;
+            height: 30px;
+            width: 200px;
+        }
+        #checkbox{
+            margin-left: 90px;
+            font-family:'Courier New', Courier, monospace;
+            font-size: small;
+            
+        }
+        .terms{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: small;
+            margin: 0px;
+        }
+        #checkbox1{
+            margin-left: 90px;
+            font-family:'Courier New', Courier, monospace;
+            font-size: small;
+            height: 30px;
+            width: 100px;
+            margin-top: 20px;
+            background-color: #04489F;
+            border: 0px;
+            color: white;
+            
+        }
+
+      
+</style>
+</head>
+<body>
+    
+<main id="mainbody">
+    
+    <section id="section">
+        <img id="secimg" src="images\user.png">
+        <p ><h1 id="sectxt">SignIn</h1></p>
+    </section>
+    <section id="sectionA">
+        <div>
+            <p id="rightsec"><a href="register.html" alt="homepage" target="_blank">Register</a></p>
+            <p id="rightsecA"><a href="login.html" alt="homepage" target="_self">SignIn</a></p>
+        </div>
+        <div>
+            <form action="" >
+         
+            <p id="parform">
+                <img id="imgform" src="images\email.png">
+                <input id="txtform" type="email" placeholder="EMAIL">
+            </p>
+            <p>
+                <img id="imgform1"  src="images\lock.png">
+                <input id="txtform1" type="password" placeholder="Password" value="">
+            </p>
+            <p>
+                <input id="checkbox" type="checkbox"><span class="terms">I have accepted the terms and conditions</span>
+            </p>
+            <p>
+                <input id="checkbox" type="checkbox"><span class="terms">keep me signed in</span>
+            </p>
+            <p><input id="checkbox1" type="submit" value="Sign In"></p>
+
+        </form>
+        </div>
+
+    </section>
+
+
+
+    </main>
+     
+   
+    
+</body>
+
+
+</html>
