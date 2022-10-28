@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="grid.css" />
+    <script src="main.js"></script>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+      }
+      body {
+        background-color: rgb(46, 46, 46);
+      }
+      main {
+        background-color: hsl(270, 82%, 4%);
+        max-width: 70%;
+        height: 500px;
+        margin: 40px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: grid;
+        grid-template-areas:
+          "a a b"
+          "a a b"
+          "c d d"
+          "c e e";
+        gap: 10px;
+        width: 40%;
+        height: 50%;
+        margin: auto;
+      }
+
+      .itemA {
+        background-color: orangered;
+        grid-area: a;
+      }
+      .itemB {
+        background-color: rgb(199, 134, 14);
+        grid-area: b;
+      }
+      .itemC {
+        background-color: rgb(16, 56, 16);
+        grid-area: c;
+      }
+      .itemD {
+        background-color: rgb(16, 95, 145);
+        grid-area: d;
+      }
+      .itemE {
+        background-color: rgb(16, 95, 145);
+        grid-area: e;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="itemA"></div>
+        <div class="itemB"></div>
+        <div class="itemC"></div>
+        <div class="itemD"></div>
+        <div class="itemE"></div>
+      </div>
+    </main>
+  </body>
+</html>
